@@ -2,7 +2,8 @@ website links https://playvids.netlify.app/
  
  
 # package used in this project 
-npm init
+fork this project 
+and run "npm init"
 
 # Getting Started with Create React App
 
