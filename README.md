@@ -1,3 +1,10 @@
+website links https://playvids.netlify.app/
+ 
+ 
+# package used in this project 
+fork this project 
+and run "npm init"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
