@@ -1,3 +1,9 @@
+website links https://playvids.netlify.app/
+ 
+ 
+# package used in this project 
+npm i react-router-dom tailwindcss  react-redux   @reduxjs/toolkit redux
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
