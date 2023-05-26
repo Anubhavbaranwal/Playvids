@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Body from "./Components/Body";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Provider } from "react-redux";
+import Store from "./Utils/Store";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Container from "./Components/Container";
+import Watchpg from "./Components/Watchpg";
 
 function App() {
+  const appRouter = createBrowserRouter([
+    {
+      path: "/",
+      element: <Body />,
+      children: [
+        {
+          path: "/",
+          element: <Container />,
+        },
+        {
+          path: "/watch",
+          element: <Watchpg />,
+        },
+        {
+          path: "/videos",
+          element: <Container />,
+        },
+      ],
+    },
+  ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={Store}>
+      <div className="App bg-black ">
+        <RouterProvider router={appRouter} />
+      </div>
+    </Provider>
   );
 }
 
