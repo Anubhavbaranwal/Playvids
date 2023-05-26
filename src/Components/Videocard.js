@@ -9,7 +9,7 @@ const Videocard = (data) => {
         className="w-[440px] h-64 p-2 rounded-lg max-sm:mr-2 max-sm:w-[350px]"
       />
       <div className=" flex flex-wrap p-2 max-sm:px-0">
-        <img src={data.data.creator.pic} className="w-20 rounded-full px-2" />
+        <img src={data.data.creator.pic} className="w-20 rounded-full px-2" alt="thumbnail" />
         <div className="pl-2">
           <h1 className="text-2xl font-bold">{data.data.submission.title}</h1>
           <h4 className="text-xl font-bold text-gray-600">
