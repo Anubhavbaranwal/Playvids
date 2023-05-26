@@ -7,7 +7,7 @@ const Sidebar = () => {
   console.log(isMenuOpen);
   if (!isMenuOpen) return null;
   return (
-    <div className="w-64 h-full text-white border-r-2 m-2 mt-0 mr-4 max-md:fixed max-md:bg-black">
+    <div className="w-64 h-full z-[1000] text-white border-r-2 m-2 mt-0 mr-4 max-md:fixed max-md:bg-black ">
       <ul className="pr-2">
         <Link to="/">
           <li className="h-12 rounded-lg hover:bg-neutral-800 pl-2 py-2 text-xl w-60">
