@@ -12,7 +12,7 @@ const Header = () => {
     dispatch(toogleMenu());
   };
   return (
-    <div className="flex justify-between p-3 max-sm:px-0 bg-black max-sm:w-fit sticky top-0">
+    <div className="flex z-[1200] justify-between p-3 max-sm:px-0 bg-black max-sm:w-fit sticky top-0">
       <div className="flex gap-2">
         <div>
           <img
