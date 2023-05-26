@@ -51,16 +51,16 @@ const Watchpg = () => {
 
   ///return
   return (
-    <div className="flex max-md:flex-col w-full">
-      <div className=" w-[400px]">
+    <div className="flex max-md:flex-col w-screen">
+      <div className=" w-full">
         {video.length > 0 && (
-          <div className=" h-screen max-md:w-full">
-            <div className="flex text-center mt-10 ml-10 mr-10 h-3/5 w-fit">
+          <div className=" h-screen max-md:w-full ">
+            <div className="flex text-center mt-10 ml-10 mr-10 h-3/5 w-2/3 max-md:w-fit">
               <video controls className="w-full">
                 <source src={video[0]?.submission?.mediaUrl} />
               </video>
             </div>
-            <div className="w-full ">
+            <div className="w-2/3 ">
               <h1 className="text-3xl ml-14 mb-2 flex justify-between ">
                 <p>{video[0]?.submission?.title}</p>
                 <img
